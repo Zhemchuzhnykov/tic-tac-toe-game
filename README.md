@@ -8,7 +8,10 @@ Developing this game covered practicing all the React fundamentals.
 
 ## Advanced Concepts Learned During This Project
 
-- Best practices of using states
+- Using array functions as an argument for the update-state function
+- Updating a state object in an immutable way
+- Lifting a state up towards an ancestor
+- Deriving a state from another component to produce a computed state
 
 ## Concepts Repeated During This Project
 
