@@ -1,12 +1,16 @@
 import "./Player.css";
 import { useState } from "react";
 
-export default function Player({ name, symbol, isActive }) {
+export default function Player({ name, symbol, isActive, onChangeName }) {
   const [isEditing, setEditing] = useState(false);
   const [playerName, setPlayerName] = useState(name);
 
   function updateButtonState() {
     setEditing((isEditing) => !isEditing);
+
+    if (isEditing) {
+      onChangeName(symbol, playerName);
+    }
   }
 
   function updatePlayerName(event) {
